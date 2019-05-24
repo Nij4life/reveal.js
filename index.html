@@ -1,49 +1,303 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="css/reset.css">
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+	<title>reveal.js</title>
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/monokai.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/beige.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/monokai.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section>
+				<h1>TypeScript</h1>
+			</section>
+
+			<section>
+				<section>
+					<p>
+						<h2>History</h2>
+					</p>
+				</section>
+				<section>
+					<p>
+						<b>TypeScript</b> development began in late 2012. Although it originated at Microsoft, its real creator is
+						programmer Anders Hejlsberg, also known as the creator of languages like Delphi, C#, but this project
+						began to develop as OpenSource.
+					</p>
+				</section>
+				<section>
+					<p>
+						The popularity and relevance of the ideas of the new language led to the fact that a number of these ideas
+						will later become part of the new standard JavaScript. The new version of one of the most popular platforms
+						for Web - Angular 2/4/5/6 is completely written in TypeScript jointly by Microsoft and Google.
+					</p>
+				</section>
+				<!-- <section>
+					<p>
+					</p>
+				</section> -->
+			</section>
+
+			<section>
+				<section>
+					<h3>A little about the language...</h3>
+				</section>
+				<section>
+					<p><b>TypeScript</b> is a JavaScript based programming language.</p>
+					<p>Why do we need a different programming language for the client side in the web environment, if
+						traditional JavaScript copes with this job , which is used on almost every web site?</p>
+					<p>But <strong>TypeScript</strong> is <strong>not</strong> just a <strong>new javascript</strong>.</p>
+				</section>
+				<section>
+					<p>At the same time, TypeScript is an extended set of JavaScript, which means that any JS program is a
+						TypeScript program. In TS, you can use all those constructions that are used in JS. Moreover, the code on TS
+						is compiled into javascript(ES3 +) and supported by the most of browsers.</p>
+				</section>
+				<section>
+					<h4>Main advantages:</h4>
+					<br>
+					<ul style="font-size: 30px;">
+						<li>
+							<p>Strong typing</p>
+						</li>
+						<li>
+							<p>Code readability</p>
+						</li>
+						<li>
+							<p>A simpler transition from the world of strict typing, rather than directly to JavaScript, in which the
+								Dynamics rules</p>
+						</li>
+						<li>
+							<p>Backward compatibility with javascript</p>
+						</li>
+						<li>
+							<p>Broad IDE support</p>
+						</li>
+					</ul>
+				</section>
+			</section>
+
+			<section>
+				<section>
+					<h3>TypeScript has influenced by JavaScript and C#</h3>
+				</section>
+				<section>
+					<h4>Language features:</h4>
+					<ul style="font-size: 30px;">
+						<li><a href="https://en.wikipedia.org/wiki/Type_signature" title="Type signature" target="_blanck">Type
+								annotations</a> and <a href="https://en.wikipedia.org/wiki/Compile_time" class="mw-redirect"
+								title="Compile-time" target="_blanck">compile-time</a> type checking</li>
+						<li><a href="https://en.wikipedia.org/wiki/Type_inference" title="Type inference" target="_blanck">Type
+								inference</a> (automatic data type detection)</li>
+						<li><a href="https://en.wikipedia.org/wiki/Class_(computer_programming)"
+								title="Class (computer programming)" target="_blanck">Classes</a></li>
+						<li><a href="https://en.wikipedia.org/wiki/Protocol_(object-oriented_programming)" class="mw-redirect"
+								title="Interface (object-oriented programming)" target="_blanck">Interfaces</a></li>
+						<li><a href="https://en.wikipedia.org/wiki/Enumerated_type" title="Enumerated type"
+								target="_blanck">Enumerated types</a>
+						</li>
+						<li><a href="https://en.wikipedia.org/wiki/Modular_programming" title="Modular programming"
+								target="_blanck">Modules</a></li>
+						<li>Abbreviated "arrow" syntax for <a href="https://en.wikipedia.org/wiki/Anonymous_function"
+								title="Anonymous function" target="_blanck">anonymous functions</a></li>
+						<li><a href="https://en.wikipedia.org/wiki/Generic_programming" title="Generic programming"
+								target="_blanck">Generics</a>
+						</li>
+						<li><a href="https://en.wikipedia.org/wiki/Namespace" title="Namespace" target="_blanck">Namespaces</a></li>
+						<li><a href="https://en.wikipedia.org/wiki/Tuple" title="Tuple" target="_blanck">Tuples</a></li>
+						<li><a href="https://en.wikipedia.org/wiki/Async/await" title="Async/await" target="_blanck">Async/await</a>
+						</li>
+					</ul>
+				</section>
+			</section>
+
+			<section>
+				<section>
+					<h3>Get TypeScript</h3>
+				</section>
+				<section>
+					<p>To get started with TypeScript, install the necessary toolkit. You can install TypeScript in two ways:
+						through the NPM package manager or as a plug-in for Visual Studio.</p>
+				</section>
+				<section>
+					<img src="./img/install.png" alt="Get TypeScript image">
+					<p><a href="https://metanit.com/web/typescript/1.2.php" target="_blanck"> more information...</a></p>
+				</section>
+			</section>
+
+			<section>
+				<section>
+					<h3>Data types</h3>
+				</section>
+				<section>
+					<ul style="font-size: 25px;">
+						<li>
+							<p>Boolean</p>
+						</li>
+						<li>
+							<p>Number</p>
+						</li>
+						<li>
+							<p>String</p>
+						</li>
+						<li>
+							<p>Array</p>
+						</li>
+						<li>
+							<p>Tuple</p>
+						</li>
+						<li>
+							<p>Enum</p>
+						</li>
+						<li>
+							<p>Any</p>
+						</li>
+						<li>
+							<p>Null и undefined</p>
+						</li>
+						<li>
+							<p>Void: no specific value, mainly used as the return type of functions</p>
+						</li>
+						<li>
+							<p>Never: no specific value and is used as the return type of functions that generate or return an error
+							</p>
+						</li>
+					</ul>
+				</section>
+			</section>
+
+			<section>
+				<section>
+					<h3>Variables and constants</h3>
+				</section>
+				<section>
+					<p>We can create variables and constants, as in JavaScript. Using quotes is the same.</p>
+					<img src="./img/exempleVar.png" alt="exemple var, let, const and quotes">
+				</section>
+				<section>
+					<h4>It's example variable declarations</h4>
+					<img src="./img/type1.png" alt="type of var">
+					<img src="./img/type3.png" alt="type of var">
+				</section>
+			</section>
+			<section>
+				<section>
+					<h3>Functions</h3>
+				</section>
+				<section>
+					<h4>Function definition</h4>
+					<pre>
+		function add(a: number, b: number): number {
+			return a + b;
+		}
+		let result1 = add(1, 2);
+		console.log(result1);</pre>
+					<pre>
+		let add = function (a: number, b: number) : number {
+			return a + b;
+		}
+		let result1 = add(1, 2);</pre>
+				</section>
+				<section>
+					<h4>Callback functions</h4>
+					<pre style="font-size: 16px;">
+	function mathOp(x: number, y: number, operation: (a: number, b: number) => number): number{
+		let result = operation(x, y);
+		return result;
+	}
+	
+	let operationFunc: (x: number, y: number) => number;
+	operationFunc = function (a: number, b: number): number {
+		return a + b;
+	}
+	console.log(mathOp(10, 20, operationFunc)); // 30 
+	
+	operationFunc = function (a: number, b: number): number {
+		return a * b;
+	}
+	console.log(mathOp(10, 20, operationFunc)); // 200 
+						</pre>
+				</section>
+				<section>
+					<h4>Arrow functions</h4>
+					<pre>
+let sum = (x: number, y: number) => x + y;
+let result = sum(15, 35); // 50
+console.log(result);</pre>
+					<pre>
+let sum = (x, y) => x + y;
+let result = sum(15, 35); // 50
+console.log(result);</pre>
+					<pre>
+let square = x => x * x;
+let hello = () => "hello world"
+console.log(square(5)); // 25
+console.log(hello());   // hello world</pre>
+					<pre>
+let sum = (x: number, y: number) => {
+	x *= 2;
+	return x + y;
+};
+let result = sum(15, 35); // 65
+console.log(result);</pre>
+				</section>
+			</section>
+
+			<section>
+				<p>More information:</p>
+				<br>
+				<ul>
+					<li><a href="https://www.typescriptlang.org/" target="_blank">Typescriptlang </a> - official site</li>
+					<li><a href="https://metanit.com/web/typescript/2.3.php" target="_blank">Metanit </a> - one of the good sites
+					</li>
+				</ul>
+			</section>
 		</div>
+	</div>
 
-		<script src="js/reveal.js"></script>
+	<script src="js/reveal.js"></script>
 
-		<script>
-			// More info about config & dependencies:
-			// - https://github.com/hakimel/reveal.js#configuration
-			// - https://github.com/hakimel/reveal.js#dependencies
-			Reveal.initialize({
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true }
-				]
-			});
-		</script>
-	</body>
+	<script>
+		// More info about config & dependencies:
+		// - https://github.com/hakimel/reveal.js#configuration
+		// - https://github.com/hakimel/reveal.js#dependencies
+		Reveal.initialize({
+			dependencies: [{
+					src: 'plugin/markdown/marked.js'
+				},
+				{
+					src: 'plugin/markdown/markdown.js'
+				},
+				{
+					src: 'plugin/notes/notes.js',
+					async: true
+				},
+				{
+					src: 'plugin/highlight/highlight.js',
+					async: true
+				}
+			]
+		});
+	</script>
+</body>
+
 </html>
