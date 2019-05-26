@@ -33,9 +33,9 @@ At the same time, TypeScript is an extended set of JavaScript, which means that 
 * Broad IDE support
 
 
-##TYPESCRIPT HAS INFLUENCED BY JAVASCRIPT AND C#
+## TYPESCRIPT HAS INFLUENCED BY JAVASCRIPT AND C#
 
-####LANGUAGE FEATURES:
+#### LANGUAGE FEATURES:
 * [Type annotations](https://en.wikipedia.org/wiki/Type_signature) and [compile-time](href="https://en.wikipedia.org/wiki/Compile_time) type checking
 * [Type inference](https://en.wikipedia.org/wiki/Type_inference) (automatic data type detection)
 * [Classes](https://en.wikipedia.org/wiki/Class_)
