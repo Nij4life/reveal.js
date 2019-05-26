@@ -84,7 +84,7 @@ The code will appear in the js file, and then just run the page.
 
 We can create variables and constants, as in JavaScript. Using quotes is the same.
 IT'S EXAMPLE VARIABLE DECLARATIONS:
-on slides we can see that...example.
+on slides we can see that... example.
 
 
 ## FUNCTIONS
