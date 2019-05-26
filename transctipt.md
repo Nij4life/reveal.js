@@ -1,5 +1,3 @@
-https://github.com/Nij4life/reveal.js
-
 Hello, my name is Alexander. I am thirty. I study in The Rolling Scopes.
 I want to speak about the TypeScript language.
 
